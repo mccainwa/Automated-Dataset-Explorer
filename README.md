@@ -36,65 +36,56 @@ Open Dataset Explorer is designed to streamline and automate the process of expl
 
 On Windows:
 
-bash
-Copy
-Edit
 python -m venv venv
 venv\Scripts\activate
+
 On macOS/Linux:
 
-bash
-Copy
-Edit
 python3 -m venv venv
 source venv/bin/activate
+
 Install required Python packages:
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
+
 (Optional) Generate the sample Iris dataset:
 
-bash
-Copy
-Edit
 python generate_iris.py
+
 Run the Streamlit app:
 
-bash
-Copy
-Edit
 streamlit run app.py
+
 Open your browser at the address shown in the terminal (usually http://localhost:8501).
 
-Required Packages
-All required packages are listed in requirements.txt and include:
 
-streamlit
+---
 
-pandas
+And similarly for **Required Packages** and **Usage Tips**:
 
-scikit-learn
+```markdown
+## Required Packages
 
-xgboost
+All required packages are listed in `requirements.txt` and include:
 
-matplotlib
+- streamlit  
+- pandas  
+- scikit-learn  
+- xgboost  
+- matplotlib  
+- shap
 
-shap
+---
 
-Usage Tips
-Upload your dataset using the app interface
+## Usage Tips
 
-Select the appropriate features and target columns
+- Upload your dataset using the app interface  
+- Select the appropriate features and target columns  
+- Choose the ML model you want to train  
+- Adjust train-test split and random seed for reproducibility  
+- Review model evaluation and interpretability plots  
+- Download your trained model and SHAP plots for sharing or future analysis
 
-Choose the ML model you want to train
-
-Adjust train-test split and random seed for reproducibility
-
-Review model evaluation and interpretability plots
-
-Download your trained model and SHAP plots for sharing or future analysis
 
 License
 This project is licensed under the MIT License.
