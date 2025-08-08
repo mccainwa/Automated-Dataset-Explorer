@@ -32,64 +32,64 @@ Open Dataset Explorer is designed to streamline and automate the process of expl
    ```bash
    git clone https://github.com/mccainwa/Automated-Dataset-Explorer.git
    cd Automated-Dataset-Explorer
-(Optional but recommended) Create and activate a virtual environment:
 
-On Windows:
+2. (Optional but recommended) Create and activate a virtual environment:
 
-python -m venv venv
-venv\Scripts\activate
+   On Windows:
+      ```bash
+      python -m venv venv
+      venv\Scripts\activate
 
-On macOS/Linux:
+4. Install required Python packages:
 
-python3 -m venv venv
-source venv/bin/activate
+      ```bash
+   pip install -r requirements.txt
 
-Install required Python packages:
+5. (Optional) Generate the sample Iris dataset:
 
-pip install -r requirements.txt
+      ```bash
+   python generate_iris.py
 
-(Optional) Generate the sample Iris dataset:
+6. Run the Streamlit app:
 
-python generate_iris.py
+      ```bash
+   streamlit run app.py
 
-Run the Streamlit app:
-
-streamlit run app.py
-
-Open your browser at the address shown in the terminal (usually http://localhost:8501).
-
+7. Open your browser at the address shown in the terminal (usually http://localhost:8501).
 
 ---
 
-And similarly for **Required Packages** and **Usage Tips**:
+Required Packages
 
+All required packages are listed in requirements.txt and include:
 
-## Required Packages
-
-All required packages are listed in `requirements.txt` and include:
-
-- streamlit  
-- pandas  
-- scikit-learn  
-- xgboost  
-- matplotlib  
+- streamlit
+- pandas
+- scikit-learn
+- xgboost
+- matplotlib
 - shap
 
 ---
 
-## Usage Tips
+Usage Tips
 
-- Upload your dataset using the app interface  
-- Select the appropriate features and target columns  
-- Choose the ML model you want to train  
-- Adjust train-test split and random seed for reproducibility  
-- Review model evaluation and interpretability plots  
+- Upload your dataset using the app interface
+- Select the appropriate features and target columns
+- Choose the ML model you want to train
+- Adjust train-test split and random seed for reproducibility
+- Review model evaluation and interpretability plots
 - Download your trained model and SHAP plots for sharing or future analysis
 
+---
 
 License
+
 This project is licensed under the MIT License.
 
+---
+
 Contact
-Created by Walter McCain
-GitHub Profile
+
+Created by Walter McCain  
+GitHub Profile: https://github.com/mccainwa
