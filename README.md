@@ -91,5 +91,5 @@ This project is licensed under the MIT License.
 
 Contact
 
-Created by Walter McCain  
+Created by Walter McCain III
 GitHub Profile: https://github.com/mccainwa
