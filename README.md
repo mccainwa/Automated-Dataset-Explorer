@@ -63,7 +63,7 @@ Open your browser at the address shown in the terminal (usually http://localhost
 
 And similarly for **Required Packages** and **Usage Tips**:
 
-```markdown
+
 ## Required Packages
 
 All required packages are listed in `requirements.txt` and include:
